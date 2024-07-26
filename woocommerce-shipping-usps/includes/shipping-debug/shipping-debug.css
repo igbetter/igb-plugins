@@ -1,0 +1,7 @@
+.woocommerce-shipping-debug-info-accordion {
+	display: none;
+}
+
+.woocommerce-shipping-debug-info-accordion pre {
+	white-space: pre-wrap;
+}

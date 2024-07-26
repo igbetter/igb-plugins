@@ -1,0 +1,29 @@
+.frm-grid-view {
+	grid-template-columns: repeat(12, 1fr);
+
+	/* top level container vars */
+	--v-tl-padding: 10px;
+	--v-tl-border-color: #efefef;
+	--v-tl-border-style: solid;
+	--v-tl-border-thickness: 1px;
+	--v-tl-background-color: initial;
+	--v-tl-line-height: initial;
+	--v-tl-font-size: initial;
+	--v-tl-border-radius: initial;
+	--v-tl-grid-column: span 12/span 12;
+}
+
+.frm-grid-view > div {
+	padding: 10px;
+	padding: var(--v-tl-padding);
+	border: 1px solid #efefef;
+	border-color: var(--v-tl-border-color);
+	border-style: var(--v-tl-border-style);
+	border-width: var(--v-tl-border-thickness);
+	border-radius: var(--v-tl-border-radius);
+	background-color: var(--v-tl-background-color);
+	line-height: var(--v-tl-line-height);
+	font-size: var(--v-tl-font-size);
+	grid-column: span 12/span 12;
+	grid-column: var(--v-tl-grid-column);
+}

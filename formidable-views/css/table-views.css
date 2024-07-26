@@ -1,0 +1,49 @@
+table.frm-responsive-table td {
+	--v-responsive-table-label: "";
+}
+
+@media only screen and (max-width: 760px), (min-width: 768px) and (max-width: 1024px)  {
+	table.frm-responsive-table, table.frm-responsive-table thead, table.frm-responsive-table tbody, table.frm-responsive-table th, table.frm-responsive-table td, table.frm-responsive-table tr {
+		display: block;
+	}
+
+	table.frm-responsive-table thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	table.frm-responsive-table tr {
+		border: 1px solid var(--border-color);
+	}
+
+	table.frm-responsive-table td {
+		border: none;
+		border-bottom: 1px solid var(--border-color);
+		position: relative;
+		padding-left: 50%;
+		min-height: 40px;
+		box-sizing: content-box;
+	}
+
+	table.frm-responsive-table td:last-of-type {
+		border-bottom: none;
+	}
+
+	table.frm-responsive-table.frm-alt-table td {
+		min-height: 20px;
+	}
+
+	table.frm-responsive-table td:before {
+		position: absolute;
+		width: 45%;
+		left: 10px;
+		padding-right: 10px;
+		white-space: nowrap;
+		content: var(--v-responsive-table-label);
+	}
+
+	table.frm-responsive-table.frm-alt-table td:before {
+		left: 20px;
+	}
+}

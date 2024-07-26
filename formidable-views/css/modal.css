@@ -1,0 +1,19 @@
+.frm-modal .postbox {
+	max-height: 600px;
+	overflow: hidden;
+}
+
+.frm-modal .postbox .frm_modal_top {
+	padding-bottom: var(--gap-sm);
+	border-bottom: 1px solid var(--grey-border);
+}
+
+.frm-modal .postbox .frm-modal-title + div:last-child {
+	top: 30px;
+}
+
+.frm-modal .postbox > div.inside .cta-inside {
+	overflow-y: auto;
+	height: auto;
+	padding: 0 15px;
+}

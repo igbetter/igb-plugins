@@ -1,0 +1,3 @@
+[submodule "igb-plugins"]
+	path = igb-plugins
+	url = git@github.com:igbetter/igb-plugins.git

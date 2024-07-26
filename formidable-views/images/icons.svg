@@ -1,0 +1,48 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="frm_views_calendar_icon" viewBox="0 0 14 16" fill="none">
+    <title>calendar</title>
+    <path d="M.375 6h13.25c.206 0 .375.169.375.375V14.5a1.5 1.5 0 01-1.5 1.5h-11A1.5 1.5 0 010 14.5V6.375C0 6.169.169 6 .375 6zM14 4.625V3.5A1.5 1.5 0 0012.5 2H11V.375A.376.376 0 0010.625 0h-1.25A.376.376 0 009 .375V2H5V.375A.376.376 0 004.625 0h-1.25A.376.376 0 003 .375V2H1.5A1.5 1.5 0 000 3.5v1.125C0 4.831.169 5 .375 5h13.25A.376.376 0 0014 4.625z" fill="#fff"/>
+</symbol>
+<symbol id="frm_views_filter_icon" viewBox="0 0 20 20" fill="none">
+    <title>filter</title>
+    <path d="M18.333 2.5H1.666l6.667 7.883v5.45l3.333 1.667v-7.117L18.333 2.5z" stroke="#4199FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="frm_views_sort_icon" viewBox="0 0 20 20" fill="none">
+    <title>filter</title>
+    <path d="M16.667 10H8.334M16.667 5H3.334M16.667 15h-3.333" stroke="#4199FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="frm_views_droplet_icon" viewBox="0 0 20 20" fill="none">
+    <title>droplet</title>
+    <path d="M10 2.242l4.717 4.717a6.667 6.667 0 11-9.425 0L10 2.242z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="frm_views_layout_builder_icon" viewBox="0 0 20 20" fill="none">
+    <title>layout-builder</title>
+    <rect x="1" y="2" width="4.667" height="8" rx="1" fill="#fff"/><rect x="7.666" y="2" width="4.667" height="8" rx="1" fill="#fff"/><rect x="14.334" y="2" width="4.667" height="8" rx="1" fill="#fff"/><rect x="1" y="12" width="18" height="7" rx="1" fill="#fff"/>
+</symbol>
+<symbol id="frm_views_coming_soon_calendar" viewBox="0 0 37 37" fill="none">
+    <title>calendar</title>
+    <path d="M27.125 8.875H3.875A3.879 3.879 0 000 12.75v19.375A3.879 3.879 0 003.875 36h23.25A3.879 3.879 0 0031 32.125V12.75a3.879 3.879 0 00-3.875-3.875zm1.292 23.25c0 .713-.58 1.292-1.292 1.292H3.875c-.713 0-1.292-.58-1.292-1.292V17.968h25.832v14.157h.002z" fill="#7389A6"/><path d="M7.751 5H6.46c-.713 0-1.292.578-1.292 1.292v5.168c0 .712.577 1.292 1.292 1.292H7.75c.713 0 1.292-.578 1.292-1.292V6.292C9.043 5.578 8.463 5 7.751 5zM24.542 5h-1.293c-.712 0-1.292.578-1.292 1.292v5.168c0 .712.58 1.29 1.292 1.29h1.293c.712 0 1.292-.578 1.292-1.292V6.292A1.293 1.293 0 0024.542 5z" fill="#B3C3DA"/><path d="M16.2 36.854l.581 1.16.581-1.16 1.833-3.659 3.659-1.833 1.16-.58-1.16-.582-3.659-1.833-1.833-3.658-.58-1.16-.582 1.16-1.833 3.658L10.71 30.2l-1.16.581 1.16.581 3.658 1.833 1.833 3.659zm14.413-1.063l1.059-2.119 2.119-1.06 1.162-.58-1.162-.582-2.119-1.06-1.06-2.118-.58-1.163-.582 1.163-1.06 2.119-2.118 1.059-1.163.581 1.163.582 2.119 1.059 1.059 2.119.581 1.162.582-1.162z" fill="#FFB72D" stroke="#fff" stroke-width="1.3"/>
+</symbol>
+<symbol id="frm_views_grid_icon" viewBox="0 0 10 10" fill="none">
+    <title>grid</title>
+    <path d="M5.765 1.155h3.214c.222 0 .402.18.402.402v2.678c0 .222-.18.402-.402.402H5.765a.402.402 0 01-.402-.402V1.557c0-.222.18-.402.402-.402zm-1.34 0H1.212a.402.402 0 00-.401.402v2.678c0 .222.18.402.401.402h3.215c.222 0 .401-.18.401-.402V1.557a.402.402 0 00-.401-.402zM.81 5.575v2.678c0 .222.18.402.401.402h3.215c.222 0 .401-.18.401-.402V5.574a.402.402 0 00-.401-.401H1.21a.402.402 0 00-.401.401zm4.955 3.08h3.214c.222 0 .402-.18.402-.402V5.574a.402.402 0 00-.402-.401H5.765a.402.402 0 00-.402.401v2.679c0 .222.18.402.402.402z" fill="#fff"/>
+</symbol>
+<symbol id="frm_views_table_icon" viewBox="0 0 10 10" fill="none">
+    <title>table</title>
+    <path d="M8.578 1.25H1.613a.804.804 0 00-.803.804v5.892c0 .444.36.804.803.804h6.965c.443 0 .803-.36.803-.804V2.054a.804.804 0 00-.803-.804zM4.56 7.679H1.88V6.07H4.56V7.68zM4.56 5H1.88V3.393H4.56V5zm3.75 2.679H5.63V6.07H8.31V7.68zM8.31 5H5.63V3.393H8.31V5z" fill="#fff"/>
+</symbol>
+<symbol id="frm_toggle_border_radius_options_icon" viewBox="0 0 22 22" fill="none">
+    <title>border radius options</title>
+   <path d="M7.25 1H4a3 3 0 00-3 3v3.25M21 7.25V4a3 3 0 00-3-3h-3.25M1 14.75V18a3 3 0 003 3h3.25M14.75 21H18a3 3 0 003-3v-3.25" stroke="#545F6E" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="frm_border_radius_corner_icon" viewBox="0 0 8 8" fill="none">
+    <title>border radius corner</title>
+    <path d="M.75 7H4a3 3 0 003-3V.75" stroke="#545F6E" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="frm_views_solid_folder_icon" width="19" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <title>folder icon</title>
+    <path d="M17.417 15.042a1.584 1.584 0 0 1-1.584 1.583H3.168a1.583 1.583 0 0 1-1.583-1.583V3.958a1.583 1.583 0 0 1 1.583-1.583h3.958L8.71 4.75h7.125a1.583 1.583 0 0 1 1.583 1.583v8.709Z" fill="#fff"/>
+</symbol>
+</defs>
+</svg>

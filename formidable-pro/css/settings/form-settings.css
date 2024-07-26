@@ -1,0 +1,10 @@
+.frm_multiselect.frm_invisible + .btn-group.frm-btn-group.dropdown {
+	visibility: hidden;
+}
+
+/** 
+ * Bootstrap multiselect CSS
+ */
+ .frm-dropdown-menu > .frm_disabled_option > span {
+	opacity: 0.5;
+ }

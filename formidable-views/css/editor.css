@@ -1,0 +1,1870 @@
+/* Temp definitions from FF core */
+.frm-gap-0 {
+	grid-gap: 0;
+	gap: 0;
+}
+
+.frm-flex-box {
+	display: flex;
+}
+
+.frm-gap-xs {
+	gap: var(--gap-xs);
+}
+/* End Temp definitions from FF core */
+
+/* Prevent custom CSS targeting h1 tags from breaking the View Editor header, causing content to fall off screen. */
+.frm-views-editor-body #frm_top_bar h1 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	height: auto !important;
+}
+
+.frm-views-editor-body #frm-publishing {
+	min-width: unset;
+}
+
+.frm-views-editor-body #frm_top_bar h1 span {
+	max-width: calc( 100% - 25px );
+}
+
+.frm-views-editor-body a {
+	box-shadow: none !important;
+}
+
+.frm-views-editor-body #wpcontent {
+	padding-left: 0;
+}
+
+.frm-views-editor-body #footer-upgrade,
+#frm_view_editor_left .multiselect-option[title=""],
+#frm_edit_box_content_modal #qt_content_toolbar #qt_content_link,
+/* Hide the empty placeholder option in multiselect dropdowns. */
+#frm_map_address_fields + .btn-group > .multiselect-container > button.multiselect-option:first-of-type,
+#frm_view_application_ids + .btn-group > .multiselect-container > button.multiselect-option:first-of-type {
+	display: none;
+}
+
+.frm-views-editor-body #wpbody-content {
+	padding-bottom: 0;
+}
+
+.frm-views-editor-body #TB_overlay {
+	z-index: 1000001; /* To appear above the Box Content Modal (z-index 1000000) */
+}
+
+.frm-views-editor-body #TB_window {
+	z-index: 1000002; /* To appear above #TB_overlay (z-index 1000001) */
+}
+
+#__wp-uploader-id-2 {
+	z-index: 1000001; /* To appear above the Box Content Modal (z-index 1000000) */
+}
+
+.frm-views-editor-body #frm_adv_info .postbox {
+	background-color: #fff;
+	border: 1px solid var(--grey-border);
+	min-width: 244px;
+	margin-top: 10px !important;
+}
+
+.frm-views-editor-body #frm_adv_info .postbox .postbox-header {
+	padding: 10px !important;
+}
+
+.frm-views-editor-body #frm_adv_info .postbox .postbox-header h2 {
+	margin-top: 0;
+	margin-bottom: 1px;
+}
+
+.frm-views-editor-body #frm_adv_info .tabs-panel {
+	padding-top: 5px;
+}
+
+.frm-views-editor-body #frm_adv_info .icl_subsubsub {
+	display: none !important; /* WPML adds this after .subsubsub for some reason so these links appear in the Customization sidebar that we do not want */
+}
+
+.frm-views-editor-body #frm_adv_info ul.frm_code_list {
+	margin-bottom: 0;
+}
+
+.frm-views-editor-body .frm_flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.frm-views-editor-body .frm_grid_container {
+	display: grid; /* Prevent old css grids from making grid into display: block; */
+}
+
+#frm_view_editor_metabox_form > #side-sortables > div + div {
+	margin-top: 10px;
+}
+
+.frm-views-editor-body .mce-floatpanel,
+.frm-views-editor-body .mce-tooltip {
+	z-index: 1000001 !important; /* To appear above the Box Content Modal (z-index 1000000) */
+}
+
+/* The unhighlighting also happens in JavaScript, but try to cover up the active page with CSS as well. */
+.frm-views-editor-body #menu-dashboard,
+.frm-views-editor-body #menu-posts,
+.frm-views-editor-body #menu-dashboard a,
+.frm-views-editor-body #menu-posts a {
+	background-color: transparent !important;
+}
+
+.frm-views-editor-body #menu-dashboard a.wp-has-current-submenu::after,
+.frm-views-editor-body #menu-posts a.wp-has-current-submenu::after {
+	border: none !important;
+}
+
+.frm-views-editor-body #menu-dashboard:not(:hover) .wp-menu-image::before,
+.frm-views-editor-body #menu-posts:not(:hover) .wp-menu-image::before {
+	color: rgba(240, 246, 252, 0.6) !important;
+}
+
+.frm-views-editor-body #menu-dashboard:hover .wp-menu-image::before,
+.frm-views-editor-body #menu-posts:hover .wp-menu-image::before {
+	color: #72aee6;
+}
+
+#frm_adv_info.frm-limited-customization-sidebar #frm-insert-fields-box,
+#frm_adv_info.frm-limited-customization-sidebar #frm-conditionals,
+#frm_adv_info.frm-limited-customization-sidebar #frm-nav-tabs,
+#frm_adv_info.frm-limited-customization-sidebar .frm-advanced-list,
+#frm_adv_info.frm-limited-customization-sidebar .frm-search {
+	display: none !important;
+}
+
+#frm_adv_info.frm-limited-customization-sidebar #frm-adv-info-tab,
+#frm_adv_info.frm-limited-customization-sidebar .frm-advanced-list.show_before_content {
+	display: block !important;
+}
+
+.frm-views-editor-body .su-generator-mfp.mfp-bg {
+	z-index: 1000001 !important; /* Make sure that the shortcodes ultimate modal background appears above the content modal */
+}
+
+.frm-views-editor-body .su-generator-mfp.mfp-wrap {
+	z-index: 1000002 !important; /* Make sure that the shortcodes ultimate modal appears above the background */
+}
+
+.frm-placeholder-description-title {
+	font-size: var(--text-xl);
+	margin: var(--gap-sm) 0 var(--gap-md);
+}
+
+#frm_view_editor_preview_area {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#frm_view_editor_preview_area .frm-layout-builder-box-with-0-rows {
+	max-width: 100%;
+}
+
+#frm_view_editor_preview_area.frm_div_preview_area .frm-layout-builder-box-with-0-rows,
+#frm_view_editor_preview_area.frm_div_preview_area .frm-unfade {
+	min-height: 38px;
+	display: flex;
+	flex-direction: column;
+}
+
+#frm_view_editor_preview_area .frm-layout-builder-box-with-0-rows > div:not(.frm-preview-box-controls),
+#frm_view_editor_preview_area .frm-unfade > div {
+	box-sizing: border-box;
+	flex: 1;
+}
+
+#frm_view_editor_left {
+	padding: var(--gap-sm) var(--gap-md) var(--gap-md);
+}
+
+#frm_view_editor_left label {
+	display: inline-block;
+}
+
+#frm_view_editor_left label .frm_help {
+	margin: 0 var(--gap-2xs);
+}
+
+#frm_view_editor_left label.frm-disabled-label {
+	color: rgba(40, 47, 54, 0.45);
+	pointer-events: none;
+}
+
+#frm_view_editor_left input[type="text"],
+#frm_view_editor_left textarea,
+#frm_view_editor_left select,
+#frm_view_application_ids + .dropdown > .multiselect-container .form-check,
+#frm_map_address_fields + .dropdown > .multiselect-container .form-check {
+	width: 100%;
+}
+
+.frm-switch-to-classic-view {
+	margin-left: auto;
+}
+
+#frm_view_editor_right {
+	display: flex;
+	flex-direction: column;
+	padding-top: 0;
+}
+
+#frm_view_editor_right > .frm-border-b {
+	position: fixed;
+	width: calc( 100% - var(--biggest-sidebar) );
+	width: -moz-available;
+	width: -webkit-fill-available;
+	width: fill-available;
+	background-color: #fff;
+	z-index: 1;
+}
+
+#frm_view_editor_right > .frm-border-b + div {
+	margin-top: 60px;
+	overflow-y: auto;
+}
+
+.frm-circle-count-wrapper {
+	background: var(--primary-color);
+	border-radius: 20px;
+	width: 21px;
+	height: 20px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+}
+
+h3.frm-view-type-description {
+	font-size: var(--text-sm) !important;
+	border: none !important;
+	padding-left: var(--gap-xs);
+	margin-right: auto;
+}
+
+.frm-listing-details-page-toggles {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: var(--gap-sm) 0;
+	background: var(--sidebar-hover);
+	border-radius: var(--small-radius);
+	height: 28px;
+	min-width: 250px;
+	padding: 2px;
+}
+
+.frm-listing-details-page-toggle {
+	display: inline-block;
+	width: 50%;
+	height: 24px;
+	line-height: 22px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.frm-listing-details-page-toggle.frm-active-tab {
+	background: #fff;
+	box-shadow: 0px 1px 2px rgba(40, 47, 54, 0.24);
+	border-radius: var(--small-radius);
+	cursor: default;
+}
+
+.ui-dialog[aria-describedby="frm_layout_builder_modal"],
+.ui-dialog[aria-describedby="frm_edit_box_content_modal"] {
+	position: absolute;
+	left: 10px !important;
+	right: 10px !important;
+	top: 10px !important;
+	bottom: 10px !important;
+	width: auto !important;
+	z-index: 1000000; /* To appear above the WordPress sidebar (z-index 9990) and the admin bar (z-index 99999) */
+}
+
+.ui-dialog[aria-describedby="frm_filter_entries_modal"],
+.ui-dialog[aria-describedby="frm_sort_entries_modal"] {
+	position: absolute;
+	left: 20% !important;
+	right: 20% !important;
+	width: auto !important;
+	z-index: 1000000; /* To appear above the WordPress sidebar (z-index 9990) and the admin bar (z-index 99999) */
+}
+
+
+.frm-checkbox-list-item {
+	display: inline-block;
+	margin: 10px 0 8px;
+	font-size: 14px;
+}
+
+.frm-checkbox-list-item > div {
+	display: inline-block;
+}
+
+.frm-layout-type-option {
+	background: var(--grey-200);
+	width: 72px;
+	border-radius: var(--gap-xs);
+	box-sizing: border-box;
+	padding: var(--gap-2xs);
+	margin-bottom: var(--gap-2xs);
+}
+
+.frm-layout-type-option:not(.frm-last-layout-option) {
+	margin-right: var(--gap-2xs);
+}
+
+.frm-layout-type-option:focus {
+	background: var(--blue-border);
+}
+
+.frm-layout-type-option div {
+	height: 16px;
+	background: var(--grey-400);
+	border-radius: 1px;
+}
+
+#frm_layout_builder_modal_content {
+	position: relative;
+}
+
+#frm_layout_builder_modal_main_area {
+	height: calc( 100vh - 71px - 53px - 20px ); /* Remove the modal header, footer, and modal margin */
+}
+
+#frm_layout_builder_modal_content {
+	grid-gap: 0 0%;
+	grid-template-columns: repeat(12, 8.35%);
+}
+
+.frm-view-layouts-list {
+	width: 100%;
+	overflow-y: scroll;
+	min-height: calc( 100vh - 361px );
+}
+
+.frm-hide-scrollbar::-webkit-scrollbar {
+	display: none;  /* Safari and Chrome */
+}
+
+.frm-hide-scrollbar {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+
+.frm-layout-builder-block > div,
+.frm-layout-builder-box-with-0-rows > div > div {
+	box-sizing: border-box;
+}
+
+.frm_div_preview_area .frm-layout-builder-box.frm-layout-builder-box-with-0-rows,
+#frm_layout_builder_modal .frm-layout-builder-box.frm-layout-builder-box-with-0-rows,
+#frm_edit_box_content_modal .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	position: relative;
+	outline: 1px dashed var(--primary-color);
+}
+
+.frm-layout-builder-row-id {
+	position: absolute;
+	left: 0;
+	background: var(--primary-color);
+	color: #fff;
+	min-width: 50px;
+	padding: var(--gap-2xs);
+	font-size: var(--text-xs);
+	text-align: center;
+	display: none;
+}
+
+#frm_layout_builder_modal_layout_container .frm-layout-builder-row.frm-active-hover-target > .frm-layout-builder-row-id {
+	display: block !important;
+}
+
+#frm_layout_builder_modal_layout_container .frm-layout-builder-row.frm-active-hover-target .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	background-color: var(--primary-50);
+}
+
+.frm-layout-builder-row-controls {
+	background-color: var(--primary-color);
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: -25px;
+	border-radius: 0 var(--small-radius) var(--small-radius) 0;
+	display: none;
+	flex-direction: column;
+	gap: var(--gap-2xs);
+	padding: var(--gap-2xs) 0;
+	z-index: 1;
+}
+
+.frm-layout-builder-row.frm-active-hover-target > .frm-layout-builder-row-controls {
+	display: flex;
+}
+
+.frm-layout-builder-row-controls > div {
+	padding: 0 var(--gap-2xs);
+	text-align: center;
+	position: relative;
+}
+
+.frm-row-control-delete svg {
+	width: 14px;
+}
+
+.frm-layout-builder-row-controls img {
+	max-width: 13px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.frm-layout-builder-row,
+.frm-layout-builder-box {
+	position: relative;
+}
+
+.frm-layout-builder-box.ui-droppable-hover {
+	background-color: rgba(65, 153, 253, 0.05);
+}
+
+.frm-layout-builder-box.ui-droppable-hover {
+	position: relative;
+}
+
+
+.frm-layout-builder-row-id {
+	top: 0;
+}
+
+.frm-dom-radios > div > div,
+.frm-dom-radios input {
+	display: inline-block;
+}
+
+.frm-dom-radios input {
+	float: left;
+	position: relative;
+	top: 5px;
+}
+
+#frm_view_editor_left .accordion-section-title {
+	border: none;
+}
+
+#frm_view_editor_left .accordion-section-content {
+	background: unset;
+}
+
+#frm_view_editor_left .accordion-section-title::after {
+	right: 0;
+}
+
+#frm_view_editor_left .accordion-section-content {
+	padding-bottom: var(--gap-sm);
+}
+
+.frm-fade-layout .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	outline: none !important;
+}
+
+.frm-fade-layout .frm-layout-builder-box.frm-layout-builder-box-with-0-rows > div {
+	background: var(--sidebar-color);
+}
+
+.frm-fade-layout .frm-layout-builder-box.frm-layout-builder-box-with-0-rows .frm-unfade {
+	background: unset;
+}
+
+#frm_layout_builder_area {
+	position: relative;
+}
+
+#frm_layout_builder_area .frm-layout-builder-box-with-0-rows > div:not(.frm-preview-box-controls) {
+	overflow: hidden;
+}
+
+#frm_view_editor_right .frm_div_preview_area .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	outline-color: var(--grey-border);
+	cursor: pointer;
+}
+
+#frm_view_editor_right .frm_div_preview_area .frm-layout-builder-box.frm-layout-builder-box-with-0-rows.frm-lower-level-box-active {
+	outline-color: var(--primary-color);
+}
+
+#frm_view_editor_right .frm-fade-layout .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	cursor: default;
+}
+
+.frm-template-view-toggle {
+	display: inline-block;
+	width: 50%;
+	height: 36px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.frm-template-view-toggle.frm-active-tab {
+	color: var(--primary-color);
+	box-shadow: inset 0px -2px 0px var(--primary-color);
+	cursor: default;
+}
+
+.frm-template-view-toggles {
+	padding: 28px 15px 0;
+}
+
+#frm_modal_box_select_area {
+	box-sizing: border-box;
+	height: calc( 100vh - 200px );
+	padding: var(--gap-md);
+	background: var(--sidebar-color);
+	overflow-y: auto;
+}
+
+#frm_modal_box_select_area .frm-layout-builder-box {
+	min-height: 60px;
+	outline-color: var(--grey-border);
+}
+
+#frm_modal_box_select_area .frm-layout-builder-box.frm-selected-layout-box {
+	background: var(--primary-color);
+}
+
+#frm_modal_box_select_area #frm_adv_info .postbox {
+	min-height: 365px;
+	min-width: unset !important;
+	margin-top: var(--gap-sm) !important;
+}
+
+#frm_modal_box_select_area .frm-nav-tabs.frm-compact-nav {
+	margin: 0;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 32.75%);
+	grid-gap: 1%;
+}
+
+#frm_modal_box_select_area .frm-nav-tabs li {
+	grid-column: span 1/span 1;
+}
+
+#frm_modal_box_select_area .frm-nav-tabs li > a {
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+}
+
+#frm_edit_box_content_modal .frm_modal_content {
+	max-height: calc(100vh - 200px);
+}
+
+#frm_edit_box_content_modal .frm_modal_footer {
+	position: relative;
+}
+
+#frm_box_content_wysiwyg_wrapper {
+	box-sizing: border-box;
+	width: 100%;
+	padding: var(--gap-md) !important; /* important needed to override core css that needs to be removed */
+	max-height: calc(100vh - 200px);
+	overflow-y: auto;
+}
+
+#frm_box_content_wysiwyg_wrapper #wp-content-editor-tools {
+	background: unset;
+}
+
+#frm_box_content_wysiwyg_wrapper textarea {
+	outline: 0;
+	box-shadow: none;
+	border-radius: var(--small-radius);
+	padding: 6px 9px;
+	border-color: var(--grey-border);
+	color: var(--dark-grey);
+	font-size: 15px;
+	margin: 0;
+	background-color: #fff;
+}
+
+#frm_box_content_wysiwyg_wrapper textarea {
+	width: 100%;
+	height: 400px;
+	border: none;
+	resize: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+#frm_before_view_content_wrapper, #frm_after_view_content_wrapper {
+	cursor: pointer;
+	margin: 15px 0 15px;
+	padding: 10px 15px;
+}
+
+.frm-add-content-to-layout-block,
+.frm-empty-content-wrapper {
+	padding: var(--gap-xs) !important; /* The plus icon in before/after content should align with the other plus icons despite the padding difference. */
+	gap: var(--gap-xs);
+	display: flex;
+	align-items: center;
+}
+
+.frm-add-before-content, .frm-add-after-content,
+.frm-add-before-icon, .frm-add-after-icon {
+	display: inline-block;
+}
+
+#frm_before_view_content_wrapper .frm-add-before-content,
+#frm_after_view_content_wrapper .frm-add-after-content {
+	opacity: 0.85;
+}
+
+.ui-widget-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--grey-border);
+	z-index: 2;
+}
+
+#frm_sort_entries_modal select,
+#frm_filter_entries_modal select,
+#frm_filter_entries_modal input {
+	width: 100%;
+}
+
+#frm_filter_entries_modal .frm-views-editor-filter-row-wrapper > div:first-child select.frm-and-or-select {
+	display: none;
+}
+
+#frm_filter_entries_modal select.frm-and-or-select {
+	width: 80px;
+}
+
+.frm-minus-button-wrapper {
+	display: inline-block;
+	padding: 5px 0 0;
+	min-width: 18px;
+}
+
+.frm-minus-button-wrapper div {
+	display: inline-block;
+}
+
+#frm_filter_entries_modal svg,
+#frm_sort_entries_modal svg {
+	color: var(--primary-color);
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+#frm_filter_entries_modal svg:hover,
+#frm_sort_entries_modal svg:hover {
+	opacity: 1;
+}
+
+#frm_views_layout_templates {
+	padding: 15px;
+}
+
+.frm-views-layout-template-option {
+	width: 100%;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.frm-views-layout-template-option-wrapper {
+	position: relative;
+}
+
+.frm-views-layout-template-option-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 22px;
+	border-radius: var(--small-radius);
+}
+
+.frm-views-overlay-icon-wrapper {
+	position: relative;
+	height: 100%;
+	z-index: 1;
+}
+
+.frm-views-overlay-icon-wrapper > span {
+	position: absolute;
+	left: 50%;
+	transform: translateX( -50% );
+	display: none;
+	width: 30px;
+	height: 30px;
+}
+
+.frm-views-overlay-icon-wrapper > span img {
+	color: #fff;
+}
+
+.frm_views_layout_templates .frm-views-overlay-icon-wrapper > span {
+	top: 50%;
+	transform: translateX( -50% ) translateY( -50% );
+}
+
+.frm_views_my_templates .frm-views-overlay-icon-wrapper > span:first-child {
+	top: 20%;
+}
+
+.frm_views_my_templates .frm-views-overlay-icon-wrapper > span:last-child {
+	bottom: 20%;
+}
+
+.frm-views-layout-template-option-wrapper:hover .frm-views-overlay-icon-wrapper > span,
+.frm-views-layout-template-option-wrapper.frm-hover-on-open .frm-views-overlay-icon-wrapper > span {
+	display: block;
+}
+
+.frm-views-layout-template-option-wrapper:hover .frm-views-layout-template-option-overlay,
+.frm-views-layout-template-option-wrapper.frm-hover-on-open .frm-views-layout-template-option-overlay {
+	background-color: rgba(65, 153, 253, 0.59);
+}
+
+.frm-views-layout-template-option > div:first-child {
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: var(--small-radius);
+	padding: 10px;
+	height: 130px;
+	overflow-y: hidden;
+}
+
+.frm-views-layout-template-option > div:last-child {
+	color: rgba(40, 47, 54, 0.65);
+	margin-top: 10px;
+}
+
+.frm-views-layout-template-option .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	outline: 0;
+	border-radius: 2px;
+	background: #9EA9B8;
+	min-height: 23px;
+}
+
+.frm-views-layout-template-option .frm-row-height-2 .frm-layout-builder-box.frm-layout-builder-box-with-0-rows {
+	min-height: 46px;
+}
+
+.frm-views-layout-template-option .frm-layout-builder-box {
+	min-height: 46px;
+}
+
+#frm_layout_builder_modal_working_space {
+	min-height: 300px;
+	padding: 0 0 var(--gap-md);
+	position: relative;
+}
+
+#frm_views_search_my_layout_templates {
+	border: 2px solid var(--grey-border);
+	border-radius: var(--small-radius) !important;
+}
+
+#frm_views_layout_templates .frm-search {
+	width: 100%;
+}
+
+.frm-modal .postbox {
+	max-height: unset !important;
+}
+
+#frm_template_name_prompt {
+	background: #282F36;
+	border-radius: var(--small-radius);
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#frm_template_name_prompt input {
+	width: calc( 100% - 200px );
+	font-size: 14px;
+}
+
+#frm_template_name_prompt a {
+	color: #fff;
+	opacity: 0.7;
+	margin-left: 25px;
+	text-decoration: underline;
+}
+
+#frm_layout_builder_area img,
+#frm_layout_builder_area .frm-layout-builder-box-with-0-rows img {
+	max-width: 100%;
+	object-fit: contain;
+	height: auto;
+}
+
+.frm-layout-type-option.ui-draggable:hover,
+.frm-layout-type-option.ui-draggable.ui-draggable-dragging {
+	filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+.frm-layout-type-option.ui-draggable.ui-draggable-dragging,
+.frm-layout-builder-row.ui-draggable.ui-draggable-dragging
+{
+	z-index: 1000003; /* We want the draggable elements to appear above the nesting limit */
+}
+
+.frm-layout-type-option.ui-draggable:hover,
+.frm-layout-builder-row.ui-draggable:hover .frm-row-control-drag
+{
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+.frm-layout-type-option.ui-draggable.ui-draggable-dragging,
+.frm-layout-builder-row.ui-draggable.ui-draggable-dragging .frm-row-control-drag {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.frm-row-control-drag svg {
+	width: 16px;
+}
+
+#frm_layout_builder_modal_main_area .frm-layout-builder-block {
+	grid-template-rows: minmax(75px, auto);
+	grid-gap: var(--gap-sm);
+}
+
+#frm_views_layout_templates .frm-layout-builder-block {
+	grid-template-rows: minmax(20px, auto);
+}
+
+.frm-disable-clicking-in-content * {
+	pointer-events: none;
+}
+
+.frm-layout-type-option div,
+.frm-layout-builder-block > div {
+	grid-column: span 12/span 12; /* .frm_full */
+}
+
+.frm-layout-type-option.frm-layout-1-1 div,
+.frm-layout-type-option.frm-layout-1-2-1 div:nth-child(2),
+.frm-layout-builder-block.frm-layout-1-1 > div,
+.frm-layout-builder-block.frm-layout-1-2-1 > div:nth-child(2) {
+	grid-column: span 6/span 6; /* .frm_half */
+}
+
+.frm-layout-type-option.frm-layout-1-1-1 div,
+.frm-layout-builder-block.frm-layout-1-1-1 > div,
+.frm-layout-type-option.frm-layout-1-2 > div:first-child,
+.frm-layout-builder-block.frm-layout-1-2 > div:first-child,
+.frm-layout-builder-block.frm-layout-2-1 > div:last-child,
+.frm-layout-type-option.frm-layout-2-1 > div:last-child {
+	grid-column: span 4/span 4; /* .frm_third */
+}
+
+.frm-layout-type-option.frm-layout-1-1-1-1 div,
+.frm-layout-type-option.frm-layout-1-3 div:first-child,
+.frm-layout-type-option.frm-layout-3-1 div:last-child,
+.frm-layout-type-option.frm-layout-1-2-1 div:nth-child(2n+1),
+.frm-layout-builder-block.frm-layout-1-1-1-1 > div,
+.frm-layout-builder-block.frm-layout-1-3 > div:first-child,
+.frm-layout-builder-block.frm-layout-3-1 > div:last-child,
+.frm-layout-builder-block.frm-layout-1-2-1 > div:first-child,
+.frm-layout-builder-block.frm-layout-1-2-1 > div:last-child
+{
+	grid-column: span 3/span 3; /* .frm_fourth */
+}
+
+.frm-layout-type-option.frm-layout-1-3 div:last-child,
+.frm-layout-type-option.frm-layout-3-1 div:first-child,
+.frm-layout-builder-block.frm-layout-3-1 > div:first-child,
+.frm-layout-builder-block.frm-layout-1-3 > div:last-child
+{
+	grid-column: span 9/span 9; /* .frm_three_fourths */
+}
+
+.frm-layout-type-option.frm-layout-1-2 > div:last-child,
+.frm-layout-builder-block.frm-layout-1-2 > div:last-child,
+.frm-layout-type-option.frm-layout-2-1 > div:first-child,
+.frm-layout-builder-block.frm-layout-2-1 > div:first-child {
+	grid-column: span 8/span 8; /* .frm_two_thirds */
+}
+
+.frm_view_editor_publish_wrapper #post-preview {
+	margin-right: 15px;
+}
+
+#frm_layout_builder_modal_layout_container {
+	overflow-y: auto;
+	height: calc( 100vh - 71px - 53px - 20px - 60px - 10px - 32px ); /* Remove the modal header, footer, footer padding, style boxes, hr, and padding */
+	padding: var(--gap-sm) var(--gap-2xl);
+}
+
+.frm-views-droppable-placeholder {
+	height: var(gap-md);
+	width: 100%;
+}
+
+.frm-views-droppable-placeholder .frm-views-droppable-placeholder-highlight {
+	height: 3px;
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.frm-views-droppable-placeholder.ui-droppable-active.ui-droppable-hover .frm-views-droppable-placeholder-highlight {
+	background: var(--primary-color);
+}
+
+#frm_before_layout_builder_toggle_options {
+	margin: var(--gap-sm) 0;
+	display: flex;
+}
+
+#frm_layout_builder_toggle {
+	margin-left: auto;
+}
+
+#frm_views_trigger_layout_builder_shortcut {
+	position: absolute;
+	top: 0;
+	right: -20px;
+	cursor: pointer;
+}
+
+#frm_views_trigger_layout_builder_shortcut:hover {
+	filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+#frm_views_trigger_layout_builder_shortcut img {
+	width: 20px;
+}
+
+#frm_views_editor_filter_entries_modal_content,
+#frm_sort_entries_modal .frm_modal_content {
+	padding: 5px 45px;
+	max-height: calc( 100vh - 300px ) !important;
+	overflow-y: auto;
+}
+
+.frm-views-editor-filter-group {
+	outline: 1px dashed var(--grey-border);
+	padding: var(--gap-md);
+	position: relative;
+}
+
+#frm_sort_entries_modal .frm_modal_content {
+	padding: var(--gap-md);
+}
+
+.frm-views-editor-filter-group > div:last-child {
+	position: absolute;
+	top: 0;
+	right: -20px;
+	width: 20px;
+	display: none;
+}
+
+.frm-views-editor-filter-group:hover > div:last-child {
+	display: block;
+	cursor: pointer;
+}
+
+.frm-delete-group-toggle {
+	background-color: var(--primary-color);
+	box-sizing: border-box;
+	padding: var(--gap-xs);
+	width: 30px;
+	border-radius: 0 var(--small-radius) var(--small-radius) 0;
+}
+
+.frm-delete-group-toggle svg {
+	width: 18px;
+	color: #fff !important;
+	opacity: 1 !important;
+}
+
+#frm_views_editor_filter_groups_wrapper > .frm-and-or-select {
+	margin-top: 15px;
+}
+
+#frm_layout_builder_modal_working_space .frm-layout-builder-row {
+	position: relative;
+}
+
+.frm-empty-preview-cell {
+	min-height: 30px;
+	height: 100%;
+}
+
+.frm-view-editor-no-entries {
+	min-height: 500px;
+}
+
+.frm-view-editor-no-entries .frm-fade-layout:nth-child(1) {
+	opacity: .6;
+}
+
+.frm-view-editor-no-entries .frm-fade-layout:nth-child(2) {
+	opacity: .55;
+}
+
+.frm-view-editor-no-entries .frm-fade-layout:nth-child(3),
+.frm-view-editor-no-entries #frm_table_editor_table tbody tr:nth-child(2) {
+	opacity: .5;
+}
+
+.frm-view-editor-no-entries .frm-fade-layout:nth-child(4),
+.frm-view-editor-no-entries #frm_table_editor_table tbody tr:nth-child(3) {
+	opacity: .45;
+}
+
+.frm-view-editor-no-entries .frm-fade-layout:nth-child(5),
+.frm-view-editor-no-entries #frm_table_editor_table tbody tr:nth-child(4) {
+	opacity: .4;
+}
+
+#frm_no_entries_placeholder {
+	text-align: center;
+	margin: 0 auto -160px;
+	position: absolute;
+	max-width: 400px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.frm-education {
+	background-color: #24282D;
+	box-shadow: 0px 26px 77px rgba(0, 0, 0, 0.17);
+	border-radius: 14px;
+	text-align: left;
+	color: #fff;
+	height: 120px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.frm-education a {
+	color: #fff;
+}
+
+.frm-education-title {
+	font-size: 14px;
+}
+
+.frm-education-description {
+	font-size: 12px;
+	margin: 10px 0;
+}
+
+.frm-education-description {
+	opacity: .6;
+}
+
+.frm-education-continue {
+	float: right;
+}
+
+.frm-education-right {
+	position: absolute;
+	text-align: left;
+	width: 300px;
+	top: 0;
+	z-index: 2; /* Make sure the education appears above the layout options hover icons (z-index 1) */
+}
+
+.frm-education-right > div:first-child {
+	display: inline-block;
+	width: 30px;
+	vertical-align: top;
+}
+
+.frm-education-right > div:nth-child(2) {
+	display: inline-block;
+	width: calc( 100% - 30px );
+}
+
+.frm-education-above {
+	position: absolute;
+	width: 300px;
+	bottom: 40px;
+	right: 0;
+}
+
+.frm-education-above > div:first-child {
+	width: 100%;
+	text-align: left;
+}
+
+.frm-education-below {
+	position: absolute;
+	width: 300px;
+	text-align: center;
+}
+
+.frm-education-below > div:last-child {
+	width: 100%;
+	text-align: left;
+}
+
+/* Adjust the spacing for the education position below of filter and sort */
+#frm_view_editor_filter_sort_wrapper ~ .frm-education-below {
+	top: 19px;
+}
+
+#frm_modal_box_select_area + .frm-education-below {
+	top: 70px;
+	right: 0;
+	z-index: 98; /* The education should appear over top of the customization sidebar in the edit content modal */
+}
+
+#frm_modal_box_select_area .frm-layout-builder-box-with-0-rows:not(.frm-selected-layout-box):hover {
+	background: rgba(65, 153, 253, 0.4);
+}
+
+#frm_before_layout_builder_toggle_options + .frm-education-below {
+	left: 50%;
+	transform: translateX(-50%);
+	top: 5px;
+	z-index: 1; /* without this z-index the outline for the first box will overlap the tooltip */
+}
+
+.frm-working-space-border,
+.frm-view-editor-top-level-box.frm-top-level-box-with-mouse-eeditvents,
+#frm_table_editor_table tbody > tr:first-child td > div {
+	outline: 1px dashed var(--grey-border);
+}
+
+#frm_layout_builder_area .frm-working-space-border {
+	padding: 15px 0 5px;
+}
+
+#frm_view_editor_preview_area.frm_div_preview_area .frm-layout-builder-box-with-0-rows:hover,
+#frm_view_editor_preview_area .frm-layout-builder-box-with-0-rows.frm-active-style-editor-cell,
+.frm-working-space-border:hover,
+.frm-working-space-border:focus,
+.frm-view-editor-top-level-box.frm-top-level-box-active,
+.frm-layout-builder-box.frm-layout-builder-box-with-0-rows.frm-lower-level-box-active,
+.frm-views-editor-filter-group:hover,
+#frm_modal_box_select_area .frm-layout-builder-box-with-0-rows:not(.frm-selected-layout-box):hover,
+#frm_table_editor_table tbody > tr:first-child td:hover > div,
+#frm_view_editor_preview_area.frm_div_preview_area .frm-layout-builder-box:focus {
+	outline-color: var(--primary-color);
+	outline-width: 2px;
+	transition: .5s outline-color ease-in-out;
+	outline-style: solid;
+	border-color: transparent !important;
+}
+
+#frm_table_editor_wrapper {
+	overflow-x: auto;
+	max-width: calc( 100% - 50px);
+}
+
+#frm_table_editor_table td {
+	padding: 4px;
+	height: 100%;
+}
+
+#frm_table_editor_table th > span:first-child {
+	max-width: calc(100% - 40px);
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#frm_table_editor_table td > div,
+#frm_table_editor_wrapper {
+	height: 100%;
+}
+
+#frm_table_editor_table.frm-alt-table td > div {
+	padding: var(--gap-sm); /* alt table normally has 20 padding, but we can't have it on the td for the outline to work as intended. */
+}
+
+#frm_table_editor_table.frm-alt-table th {
+	width: unset; /* this is normally set to 200px but that causes really weird drag/drop behaviour */
+}
+
+#frm_table_editor_table.frm-grid td > div {
+	padding: 5px;
+}
+
+.frm-previewing-view #frm_table_editor_table td {
+	padding: 12px !important;
+}
+
+.frm-view-editor-top-level-box > .frm-preview-box-controls {
+	z-index: 1;
+}
+
+.frm-preview-box-controls {
+	position: absolute;
+	top: -2px;
+	right: -25px;
+	width: 24px;
+	box-sizing: border-box;
+	display: none;
+	z-index: 2;
+}
+
+.frm-preview-box-controls > div {
+	background-color: var(--primary-color);
+	color: #fff;
+	border-radius: 0 var(--small-radius) var(--small-radius) 0;
+	padding: 3px !important;
+	box-sizing: border-box;
+	width: 20px;
+}
+
+.frm-view-editor-top-level-box.frm-top-level-box-active > .frm-preview-box-controls,
+#frm_view_editor_preview_area .frm-layout-builder-box-with-0-rows:hover .frm-preview-box-controls {
+	display: block;
+}
+
+.frm-cell-style-settings {
+	min-height: 30px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap; /* For the border radius setting */
+	align-items: center;
+	text-align: end;
+}
+
+.frm-cell-style-settings label.frm_primary_label {
+	margin-bottom: 0 !important;
+}
+
+.frm-cell-style-settings label + div {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: var(--gap-2xs);
+}
+
+.frm-cell-style-settings select {
+	width: auto !important;
+	max-width: min( 100%, 105px ) !important;
+}
+
+.frm-cell-style-settings .wp-picker-container,
+.frm-cell-style-settings input {
+	max-width: 145px !important;
+}
+
+.frm-cell-style-settings select + input {
+	width: 65px !important;
+}
+
+.frm-views-editor-body .frm_view_editor_publish_wrapper {
+	background: #fff;
+	height: 60px;
+	box-sizing: border-box;
+}
+
+#frm_layout_builder_area .frm-layout-builder-box-with-0-rows > div:not(.frm-preview-box-controls) .frmsvg {
+	/* height is set to 18px in frm_admin.css but we do not want to limit height for svg in preview */
+	height: unset;
+}
+
+#frm_layout_builder_area .frm-layout-builder-box-with-0-rows div.frm-star-group .frmsvg {
+	/* fix star field height in view builder */
+	height: 25px;
+}
+
+.frm-add-content-to-layout-block svg,
+#frm_before_view_content_wrapper .frm-add-before-icon svg,
+#frm_after_view_content_wrapper .frm-add-after-icon svg {
+	width: 22px !important;
+	height: 22px !important;
+	color: var(--grey-400);
+}
+
+.frm-preview-box-controls svg {
+	width: 15px;
+}
+
+.frm-delete-layout-row-warning,
+.frm-nesting-limit-warning {
+	background-color: #FFE9B1;
+	border-radius: var(--small-radius);
+	color: rgba(40, 47, 54, 0.85);
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	right: 80px;
+}
+
+.frm-delete-layout-row-warning a,
+.frm-nesting-limit-warning a {
+	color: #000;
+	margin-left: 10px;
+	text-decoration: underline;
+}
+
+.frm-delete-layout-row-warning > * {
+	vertical-align: top;
+}
+
+.frm-reached-nesting-limit {
+	background: var(--sidebar-hover) !important;
+}
+
+.frm-reached-nesting-limit > div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.frm-views-layout-template-option-overlay .frm-dropdown-menu .frmsvg {
+	color: var(--dark-grey);
+	position: relative;
+	right: 13px;
+}
+
+#frm_views_detail_slug {
+	margin-top: 0 !important;
+}
+
+#frm_views_parameter_value {
+	vertical-align: top;
+}
+
+#frm_view_editor_left .accordion-section,
+#frm_view_editor_left hr {
+	border-bottom: 2px solid var(--sidebar-hover);
+	border-top: none;
+	margin-bottom: 0;
+}
+
+#frm_view_editor_left hr {
+	margin-top: var(--gap-sm);
+}
+
+#frm_no_entries_textarea_collapsible.open {
+	border-bottom: none;
+}
+
+.frm_views_copy_view_setting label {
+	display: flex !important;
+}
+
+.frm_views_copy_view_setting input[type="checkbox"] {
+	margin-top: 2px !important;
+}
+
+.frm-layout-builder-row:not(:last-child) {
+	margin-bottom: var(--gap-xs);
+}
+
+.frm-drag-placeholder-child .frm-layout-builder-row:first-of-type,
+.frm-drag-placeholder-child .frm-layout-builder-row:last-of-type {
+	display: none;
+}
+
+.frm-layout-builder-box.ui-droppable-hover.frm-add-layout-top .frm-drag-placeholder-child .frm-layout-builder-row:last-of-type,
+.frm-layout-builder-box.ui-droppable-hover.frm-add-layout-bottom .frm-drag-placeholder-child .frm-layout-builder-row:first-of-type {
+	display: block;
+}
+
+.frm-layout-builder-box.ui-droppable-hover .frm-drag-placeholder-child .frm-layout-builder-block {
+	height: 30px;
+}
+
+.frm-layout-builder-box.ui-droppable-hover.frm-add-layout-middle .frm-drag-placeholder-child .frm-layout-builder-block {
+	height: 65px;
+}
+
+.frm-layout-builder-box.ui-droppable-hover .frm-drag-placeholder-child .frm-layout-builder-row .frm-layout-builder-box-with-0-rows {
+	height: 25px;
+	opacity: .5;
+}
+
+.frm-layout-builder-box.ui-droppable-hover.frm-add-layout-middle .frm-drag-placeholder-child .frm-layout-builder-box-with-0-rows {
+	height: 65px;
+}
+
+.frm-layout-builder-box.ui-droppable-hover .frm-empty-preview-cell {
+	min-height: 30px;
+}
+
+.frm-layout-builder-box.ui-droppable-hover .frm-layout-builder-row {
+	margin-bottom: 0;
+}
+
+.frm-layout-builder-box.ui-droppable-hover.frm-add-layout-top .frm-drag-placeholder-child .frm-layout-builder-row:last-of-type {
+	margin-top: 5px;
+}
+
+.frm-layout-builder-box.ui-droppable-hover.frm-add-layout-bottom .frm-drag-placeholder-child .frm-layout-builder-row:first-of-type {
+	margin-bottom: 5px;
+}
+
+.frm-view-editor-top-level-box {
+	padding: var(--gap-xs);
+}
+
+.frm-drag-placeholder-child .frm-view-editor-top-level-box {
+	padding: 0;
+}
+
+.frm-preview-box-controls,
+.frm-delete-table-column,
+.frm-row-control-delete,
+#frm_table_editor_table tbody > tr:first-child td {
+	cursor: pointer;
+}
+
+.frm-view-editor-meta-box {
+	border: 1px solid var(--sidebar-hover);
+	background-color: #fff;
+	padding: var(--gap-sm);
+}
+
+.frm-view-editor-meta-box .inside {
+	padding: 0;
+}
+
+.frm-right-panel .frm-view-editor-meta-box h3 {
+	border: none;
+	font-size: var(--text-md);
+}
+
+.frm_views_editor_education {
+  width: 30px;
+  height: 30px;
+}
+
+.frm-education-above .frm_views_editor_education:before,
+.frm-education-below .frm_views_editor_education:before {
+	position: relative;
+	left: 143px;
+}
+
+.frm-education-above .frm_views_editor_education:after,
+.frm-education-below .frm_views_editor_education:after {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.frm-education-right .frm_views_editor_education:after {
+	top: 6.5px;
+	left: 6.5px;
+}
+
+.frm-education-above .frm_views_editor_education:after {
+	bottom: 14px;
+}
+
+.frm-education-below .frm_views_editor_education:after {
+	top: 6px;
+}
+
+.frm_views_editor_education:before {
+	content: '';
+	position: relative;
+	display: block;
+	width: 75%;
+	height: 75%;
+	box-sizing: border-box;
+	border-radius: 45px;
+	background-color: #F15A24;
+	animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.frm_views_editor_education:after {
+	content: '';
+	position: absolute;
+	display: block;
+	background-color: #F15A24;
+	border-radius: 15px;
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
+	animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+	height: 10px;
+	width: 10px;
+}
+
+@keyframes pulse-ring {
+  0% {
+	transform: scale(.33);
+  }
+  80%, 100% {
+	opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+	transform: scale(.8);
+  }
+  50% {
+	transform: scale(1);
+  }
+  100% {
+	transform: scale(.8);
+  }
+}
+
+.frm-dismiss-coming-soon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.frm-dismiss-coming-soon svg {
+	width: 15px;
+	height: 15px;
+}
+
+#frm_layout_builder_area .frm_grid_container {
+	grid-gap: var(--gap-xs) 2%;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+#frm_invisible_hover_extension_div {
+	position: absolute;
+	top: 0;
+	right: -24px;
+	bottom: 0;
+	width: 24px;
+}
+
+.frm-border-radius-icon-wrapper {
+	cursor: pointer;
+	min-width: 18px;
+}
+
+.frm-border-radius-corner-icon-wrapper {
+	position: absolute;
+	top: 8px;
+	left: 6px;
+}
+
+input.frm-cell-border-radius {
+	width: calc( 100% - 18px - 4px ) !important; /* svg - padding */
+}
+
+.frm-border-radius-corner-input {
+	text-align: right;
+}
+
+.frm-advanced-border-radius-settings {
+	min-width: 300px; /* Force to wrap when all corner show */
+	grid-gap: var(--gap-2xs);
+}
+
+.frm-advanced-border-radius-settings > div:first-child .frm-border-radius-corner-icon-wrapper {
+	transform: rotate(180deg);
+}
+
+.frm-advanced-border-radius-settings > div:nth-child(2) .frm-border-radius-corner-icon-wrapper {
+	transform: rotate(270deg);
+}
+
+.frm-advanced-border-radius-settings > div:nth-child(4) .frm-border-radius-corner-icon-wrapper {
+	transform: rotate(90deg);
+}
+
+.accordion-section-content .wp-picker-container .wp-picker-holder,
+.frm-cell-style-settings .wp-picker-holder {
+	/* Make sure that the color picker is visible in Grid Style Settings. */
+	right: 0;
+}
+
+#frm_education_additional-view-settings {
+	position: relative;
+	z-index: 1; /* Prevent preview content from appearing above the tooltip */
+}
+
+#frm_layout_builder_area .frm-views-box-placeholder {
+	background-image: linear-gradient(0.25turn, var(--sidebar-color), #fff, 35%, #fff 10%, var(--sidebar-color));
+	background-size: 250% 250%;
+	animation: placeholder-loader 1500ms ease-out infinite;
+}
+
+@keyframes placeholder-loader {
+	from {
+		background-position-x: 100%;
+	}
+	to {
+		background-position-x: -100%;
+	}
+}
+
+#frm_sort_entries_modal .frm-field-select.frm-random-order-option {
+	width: calc( 100% - 83px );
+	margin-right: 0;
+	max-width: none;
+}
+
+#frm_sort_entries_modal .frm-field-select.frm-random-order-option + .frm-order-select {
+	display: none;
+}
+
+#frm_view_editor_preview_area.frm-code-view-active .frm-layout-builder-box-with-0-rows,
+#frm_view_editor_preview_area.frm-code-view-active #frm_before_view_content_wrapper,
+#frm_view_editor_preview_area.frm-code-view-active #frm_after_view_content_wrapper {
+	white-space: break-spaces;
+}
+
+#frm_table_editor_table {
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 0 !important; /* frm-alt-table has some margin top. it messes with the drag marker. having margin top in the preview isn't useful. */
+}
+
+#frm_table_editor_table th > .frm-table-header-controls {
+	float: right;
+	visibility: hidden;
+}
+
+.frm-table-header-controls svg {
+	pointer-events: none;
+	opacity: .75;
+}
+
+body:not(.frm-dragging-table-column) #frm_table_editor_table th:hover > .frm-table-header-controls,
+#frm_table_editor_table th.frm-dropdown-open > .frm-table-header-controls,
+#frm_table_editor_table th.frm-hovering-over-td-cell > .frm-table-header-controls {
+	visibility: visible;
+}
+
+#frm_table_column_dropdown {
+	padding: 10px;
+	width: 300px;
+	z-index: 1;
+	position: absolute;
+	display: block;
+}
+
+#frm_table_column_dropdown label {
+	font-size: var(--text-sm);
+	display: block;
+}
+
+.frm-single-field-dropdown {
+	padding: 3px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	overflow-y: auto;
+}
+
+.frm-single-field-dropdown > div {
+	height: 31px;
+	border-radius: 4px;
+	padding: 7px 13px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.frm-single-field-dropdown > div:hover,
+.frm-single-field-dropdown > div.frm-active-field-option {
+	background: rgba(65, 153, 253, 0.1);
+}
+
+#frm_manage_table_columns_modal .frm-search {
+	margin: 0 !important;
+}
+
+.frm_table_preview_area .frm-views-box-placeholder {
+	width: calc( 100% + 20px );
+	margin: -10px;
+	min-height: 30px;
+}
+
+.frm_table_preview_area .frm-view-editor-entries-wrapper {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	padding: 0 2px; /* add a little horizontal padding for the drag markers to not get cut off on the sides. */
+	box-sizing: border-box;
+}
+
+#frm_table_editor_wrapper,
+#frm-add-table-column {
+	flex: 1;
+}
+
+#frm-add-table-column {
+	align-self: stretch;
+	flex: 1;
+	max-width: 50px;
+}
+
+#frm-add-table-column > div {
+	margin-left: 5px;
+	padding: 10px;
+	background: var(--sidebar-color);
+	height: 100%;
+	box-sizing: border-box;
+	cursor: pointer;
+	text-align: center;
+}
+
+#frm-add-table-column > div:hover {
+	background: #EBEDF4;
+}
+
+#frm_table_column_drag_marker {
+	position: absolute;
+	top: 3px;
+	height: 20px;
+	background: var(--primary-color);
+	width: 2px;
+	transform: translateX(-1px);
+}
+
+.frm-table-header-drag-handle {
+	cursor: move; /* fallback if grab cursor is unsupported */
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+
+.frm-table-header-gear {
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.frm-table-column-helper {
+	background: #fff;
+	border-radius: 4px;
+	font-weight: bold;
+	z-index: 5;
+	filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+	box-sizing: border-box;
+}
+
+/* Range Slider Field */
+.frm-range-field {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.frm-range-field-slider {
+	/* Removes the default browser styles */
+	-webkit-appearance: none;
+	height: 8px;
+	border-radius: 10px;
+	outline: none;
+	width: 132px;
+
+	/* Add a default background gradient */
+	background: linear-gradient(to right, var(--primary-500) 0%, var(--grey-200) 0% 100%);
+}
+
+.frm-range-field-slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	background: #fff;
+	border: 2px solid var(--primary-500);
+	border-radius: 50%;
+}
+
+.frm-range-field-slider::-moz-range-thumb {
+	height: 16px;
+	width: 16px;
+	background: #fff;
+	border: 2px solid var(--primary-500);
+	border-radius: 50%;
+}
+
+.frm-range-field-input-wrapper input[type="number"].frm-range-field-number {
+	-moz-appearance: textfield;
+	width: 60px;
+	min-height: unset;
+	height: 26px;
+	border-radius: var(--small-radius);
+	border-color: var(--grey-300);
+	color: var(--grey-500);
+	padding: 0 8px;
+	font-size: var(--text-sm);
+}
+
+.frm-range-field-input-wrapper input[type="number"].frm-range-field-number::-webkit-outer-spin-button,
+.frm-range-field-input-wrapper input[type="number"].frm-range-field-number::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.frm-range-field-input-wrapper {
+	position: relative;
+}
+
+.frm-range-field-unit {
+	position: absolute;
+	top: 50%;
+	right: 8px;
+	transform: translateY(-50%);
+	color: var(--grey-300);
+	font-size: var(--text-sm);
+	line-height: 1;
+}
+
+/* Hide any third party notices that cause UI issues */
+body.frm-views-editor-body #wpbody-content > *:not(.frm_wrap):not(.frm-review-notice) {
+	display: none;
+}
+
+#frm_embed_modal .frm_modal_top {
+	border-bottom: none;
+}
+
+@media only screen and (max-width: 850px) {
+	#frm_view_editor_preview_area {
+		padding-left: 30px !important;
+		padding-right: 30px !important;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	.frm-views-editor-body #frm_top_bar h1 {
+		max-width: 20vw;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.frm-views-editor-body #frm_top_bar h1 {
+		max-width: 40vw;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.frm-views-editor-body #frm_top_bar h1 {
+		max-width: 150px;
+	}
+}

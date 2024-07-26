@@ -1,0 +1,214 @@
+# Copyright (C) 2024 Strategy11
+# This file is distributed under the same license as the Formidable Form Action Automation plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Form Action Automation 2.07\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/formidable-autoresponder\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-04-29T15:48:23+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: formidable-autoresponder\n"
+
+#. Plugin Name of the plugin
+#: formidable-autoresponder.php
+msgid "Formidable Form Action Automation"
+msgstr ""
+
+#. Description of the plugin
+#: formidable-autoresponder.php
+msgid "Allows you to set future notifications on form entries"
+msgstr ""
+
+#. Author of the plugin
+#: formidable-autoresponder.php
+msgid "Strategy11"
+msgstr ""
+
+#. Author URI of the plugin
+#: formidable-autoresponder.php
+msgid "https://formidableforms.com"
+msgstr ""
+
+#. translators: %1$s: Action name, %2$d: Entry ID, %3$s: the settings
+#: classes/controllers/FrmAutoresponderAppController.php:424
+msgid "Not scheduling \"%1$s\" action for entry #%2$d because the settings are invalid: %3$s."
+msgstr ""
+
+#. translators: %1$s: Action name, %2$d: Entry ID, %3$s: Date
+#: classes/controllers/FrmAutoresponderAppController.php:427
+msgid "Not scheduling \"%1$s\" action for entry #%2$d for %3$s because the time has already passed."
+msgstr ""
+
+#. translators: %s: Timestamp
+#: classes/controllers/FrmAutoresponderAppController.php:439
+msgid "Reference TS: %s"
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderAppController.php:552
+msgid "Only a string should be passed as the autoresponder trigger time."
+msgstr ""
+
+#. translators: %1$s: Action name, %2$d: Entry ID
+#: classes/controllers/FrmAutoresponderAppController.php:668
+msgid "Conditions for \"%1$s\" action for entry #%2$d not met. Halting."
+msgstr ""
+
+#. translators: %1$s: Action name, %2$d: Entry ID
+#: classes/controllers/FrmAutoresponderAppController.php:673
+msgid "Conditions for \"%1$s\" action for entry #%2$d met. Proceeding."
+msgstr ""
+
+#. translators: %1$s: Action name, %2$d: number
+#: classes/controllers/FrmAutoresponderAppController.php:684
+msgid "Not triggering %1$s because there we have already sent out the limit of %2$d."
+msgstr ""
+
+#. translators: %1$s: Action type, %2$s: Action name
+#: classes/controllers/FrmAutoresponderAppController.php:700
+msgid "Triggering %1$s action for \"%2$s\""
+msgstr ""
+
+#. translators: %1$s: Action name, %2$d: entry id, %3$s: timestamp
+#: classes/controllers/FrmAutoresponderAppController.php:818
+msgid "Scheduling \"%1$s\" action for entry #%2$d for %3$s"
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderAppController.php:882
+msgid "Formidable Autoresponder requires that Formidable Pro version 2.0 or greater be installed.  Until then, keep Formidable Autoresponder activated only to continue enjoying this insightful message."
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderSettingsController.php:48
+msgid "Days"
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderSettingsController.php:49
+msgid "Years"
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderSettingsController.php:50
+msgid "Months"
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderSettingsController.php:51
+msgid "Hours"
+msgstr ""
+
+#: classes/controllers/FrmAutoresponderSettingsController.php:52
+msgid "Minutes"
+msgstr ""
+
+#: classes/models/FrmAutoresponderLog.php:41
+msgid "Nothing to see here"
+msgstr ""
+
+#: classes/views/settings.php:3
+msgid "Setup Automation"
+msgstr ""
+
+#: classes/views/settings.php:9
+msgid "Automation"
+msgstr ""
+
+#: classes/views/settings.php:12
+msgid "Ignore"
+msgstr ""
+
+#: classes/views/settings.php:13
+msgid "Respect"
+msgstr ""
+
+#. translators: %s: Setting name
+#: classes/views/settings.php:18
+msgid "the \"%s\" setting above"
+msgstr ""
+
+#. translators: %s: Setting name
+#: classes/views/settings.php:18
+msgid "Trigger this action after"
+msgstr ""
+
+#: classes/views/settings.php:22
+msgid "Send this notification"
+msgstr ""
+
+#: classes/views/settings.php:34
+msgid "After"
+msgstr ""
+
+#: classes/views/settings.php:35
+msgid "Before"
+msgstr ""
+
+#: classes/views/settings.php:44
+#: classes/views/settings.php:71
+msgid "Select Field"
+msgstr ""
+
+#: classes/views/settings.php:45
+msgid "Create Date"
+msgstr ""
+
+#: classes/views/settings.php:46
+msgid "Update Date"
+msgstr ""
+
+#: classes/views/settings.php:62
+msgid "...and then every"
+msgstr ""
+
+#: classes/views/settings.php:68
+msgid "or"
+msgstr ""
+
+#: classes/views/settings.php:93
+msgid "after that"
+msgstr ""
+
+#: classes/views/settings.php:99
+msgid "...a maximum of"
+msgstr ""
+
+#: classes/views/settings.php:103
+msgid "times"
+msgstr ""
+
+#: classes/views/settings.php:107
+msgid "Will write some debug messages out to a log file specific to this action.  Refreshing this page will load a list of whatever log files have been created for this action. The log files start fresh every day.  Note, the times in the log files are in UTC +0 timezone."
+msgstr ""
+
+#: classes/views/settings.php:109
+msgid "Turn debug on"
+msgstr ""
+
+#: classes/views/settings.php:113
+msgid "No log files to show yet.  Go fill out the form!"
+msgstr ""
+
+#: classes/views/settings.php:115
+msgid "Latest log files for this action:"
+msgstr ""
+
+#: classes/views/settings.php:143
+msgid "Current Queue"
+msgstr ""
+
+#: classes/views/settings.php:146
+msgid "Clear and then refresh this queue.  Please note, this will start by removing all items from the queue and then it will go through all entries for this form and recalculate any form action automation.  This is a good action to take if you have made changes to your automation and wish to have those changes take effect for existing entries."
+msgstr ""
+
+#: classes/views/settings.php:150
+msgid "Empty"
+msgstr ""
+
+#: classes/views/settings.php:155
+msgid "Entry"
+msgstr ""
+
+#: classes/views/settings.php:156
+msgid "When"
+msgstr ""

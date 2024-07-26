@@ -1,0 +1,13 @@
+.frm_autoresponder_rows input[type=number] {
+    width: 70px;
+    padding-right: 5px;
+}
+
+.frm_autoresponder_row select {
+    vertical-align: baseline !important;
+}
+
+.frm-fields .frm_autoresponder_rows p label {
+    padding: 8px 0;
+    display: inline-block;
+}

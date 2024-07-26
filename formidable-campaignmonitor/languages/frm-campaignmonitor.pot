@@ -1,0 +1,96 @@
+# Copyright (C) 2024 Strategy11
+# This file is distributed under the same license as the Formidable Campaign Monitor plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Formidable Campaign Monitor 1.05\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/formidable-campaignmonitor\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-06-07T13:46:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: frm-campaignmonitor\n"
+
+#. Plugin Name of the plugin
+#: formidable-campaignmonitor.php
+msgid "Formidable Campaign Monitor"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: formidable-campaignmonitor.php
+msgid "https://formidableforms.com/"
+msgstr ""
+
+#. Description of the plugin
+#: formidable-campaignmonitor.php
+msgid "Add users to your Campaign Monitor list from your Formidable forms"
+msgstr ""
+
+#. Author of the plugin
+#: formidable-campaignmonitor.php
+msgid "Strategy11"
+msgstr ""
+
+#: api/campaign-monitor.php:39
+msgid "No API key specified."
+msgstr ""
+
+#: api/campaign-monitor.php:42
+msgid "No Client ID specified."
+msgstr ""
+
+#: api/campaign-monitor.php:81
+msgid "Could not get lists."
+msgstr ""
+
+#: api/campaign-monitor.php:119
+msgid "Could not get custom fields."
+msgstr ""
+
+#: controllers/FrmCMAppController.php:32
+msgid "You are running an outdated version of Formidable. This plugin needs Formidable v4.0 + to work correctly."
+msgstr ""
+
+#: controllers/FrmCMSettingsController.php:106
+msgid "API key and/or Client ID may not be correct"
+msgstr ""
+
+#: views/action-settings/options.php:13
+msgid "Contact List"
+msgstr ""
+
+#: views/action-settings/options.php:43
+msgid "Clear Cache"
+msgstr ""
+
+#: views/settings/form.php:20
+msgid " API Key"
+msgstr ""
+
+#: views/settings/form.php:26
+msgid "Your API key can be found at yoursite.createsend.com/account/apikeys. Go to your Campaign Monitor account. Click on your name in the top corner then \"Account Settings\" - \"API Keys\""
+msgstr ""
+
+#: views/settings/form.php:34
+msgid "Client ID"
+msgstr ""
+
+#: views/settings/form.php:42
+msgid "Debug Mode"
+msgstr ""
+
+#: views/settings/form.php:46
+msgid "No"
+msgstr ""
+
+#: views/settings/form.php:49
+msgid "Yes"
+msgstr ""
+
+#: views/settings/form.php:53
+msgid "See Campaign Monitor response on form submit"
+msgstr ""

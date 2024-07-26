@@ -1,0 +1,145 @@
+.post-type-frm_display #wpwrap #wpbody-content > .wrap > .page-title-action,
+.post-type-frm_display #wpwrap #wpbody-content > .wrap > h1.wp-heading-inline {
+	/* newer versions of Elementor cause these to become inline-block; */
+	display: none;
+}
+
+#frm_map_address_fields + .btn-group > .multiselect-container > button.multiselect-option:first-of-type {
+	display: none;
+}
+
+#frm_top_bar h2:only-child {
+	border-left: none !important;
+}
+
+#frm_top_bar h1 {
+	max-width: 200px;
+	width: auto;
+}
+
+#frm_new_view_modal .frm-modal-pagecounter {
+	text-align: center;
+	position: absolute;
+	line-height: 26px;
+	inset: 0;
+	pointer-events: none;
+}
+
+#frm_new_view_modal .frm-templates-list.frm-categories-list li > div > div:last-child {
+	padding-left: 13px !important;
+}
+
+#frm_select_data_source_back {
+	float: left;
+}
+
+.ui-widget-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--grey-border);
+	z-index: 2;
+}
+
+.frm-hover-icons > .frm-create-hover-icon {
+	background-color: var(--primary-color);
+}
+
+.frm-hover-icons > .frm-create-hover-icon .frmsvg {
+	width: 14px;
+	height: 14px;
+}
+
+.frm-hover-icons .frm-create-hover-icon svg {
+	color: #fff;
+}
+
+.frm-hover-icons .frm-create-hover-icon:hover {
+	background-color: var(--primary-hover) !important;
+}
+
+.post-type-frm_display .frm_top_left {
+	/* Add padding so that the Add New button does not get cut off. */
+	padding-bottom: 5px;
+}
+
+.frm-new-table-view-option {
+	padding: 5px;
+	margin: 0 !important;
+}
+
+.frm-new-table-view-option.frm-selected-table-view-option {
+	background: var(--primary-25);
+}
+
+.frm-new-table-view-option label {
+	margin-bottom: 0;
+}
+
+.frm-coming-soon {
+	border: 1px solid var(--grey-200);
+	box-sizing: border-box;
+	border-radius: var(--small-radius);
+	padding: var(--gap-sm);
+	box-shadow: var(--box-shadow-lg);
+	margin: 0 0 var(--gap-md);
+	position: relative;
+}
+
+.frm-coming-soon svg {
+	width: 37px;
+	height: 37px;
+}
+
+.frm-coming-soon-pill {
+	color: #fff;
+	background: #FFB72D;
+}
+
+.frm-table-options-container {
+	max-height: 250px;
+	overflow-y: auto;
+	grid-gap: var(--gap-2xs);
+	margin-bottom: var(--gap-2xs);
+}
+
+#frm_new_view_datasource_select,
+#frm_new_view_name {
+	min-width: 400px;
+}
+
+#frm_new_view_modal .frm-search {
+	margin: 0 !important;
+}
+
+.frm-embed-view svg,
+.frm-embed-view use {
+	pointer-events: none;
+}
+
+#frm_embed_modal .frm_modal_top {
+	border-bottom: none;
+}
+
+#frm_new_view_modal button.multiselect,
+#frm_new_view_modal span.form-check {
+	width: 100%;
+}
+#frm_new_view_modal button.multiselect {
+	text-align: left;
+}
+#frm_new_view_modal span.form-check label.form-check-label {
+	display: inline;
+}
+/* These are required for the address dropdown to not get cut off by the modal. */
+.ui-dialog:has(#frm_new_view_modal),
+#frm_new_view_modal .postbox {
+	overflow: visible;
+}
+#frm_new_view_modal label .frm_help {
+	margin: 0 var(--gap-2xs);
+}

@@ -1,0 +1,314 @@
+body {
+	--progress-bar-height: 0px;
+}
+body.frm_with_progress_bar {
+	--progress-bar-height: 5px;
+}
+.frm_chat_form_cont.frm_forms.with_frm_style {
+	--fieldset-padding: 30px;
+	position: relative;
+	padding-bottom: var(--fieldset-padding);
+	font-family: var(--font);
+	color: var(--form-desc-color);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.frm_chat_form_cont {
+	overflow-x: clip;
+}
+.frm_preview_page .frm_chat_form_cont.frm_forms.with_frm_style,
+.single-frm_landing_page .frm_chat_form_cont.frm_forms.with_frm_style {
+	max-width: 780px !important;
+}
+body:not(.frm_preview_page):not(.single-frm_landing_page) .frm_chat_form_cont.frm_forms.with_frm_style {
+	justify-content: center;
+	min-height: 350px;
+}
+.frm_chat_form_cont.frm_forms.with_frm_style:before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-position: 50% 0;
+	background-image: var(--bg-image-url);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index:-1;
+	opacity: var(--bg-image-opacity);
+	border-radius: var(--border-radius);
+}
+.frm_chat_form_cont .frm_form_fields > fieldset {
+	background: transparent !important;
+	padding-bottom: 0;
+}
+.frm_chat_form_cont .frm_form_fields > fieldset:before {
+	display: none !important;
+	opacity: 1;
+}
+.frm_chat_form {
+	position: relative;
+	overflow-x: clip;
+	padding: 1px; /* Make room for the borders */
+}
+.frm_animating_chat_field.frm_active_chat_field {
+	position: relative;
+}
+.frm_animating_chat_field.frm_inactive_chat_field {
+	position: absolute;
+	top: 0;
+}
+.frm_active_chat_field[tabindex="0"], .frm_inactive_chat_field[tabindex="0"] {
+	outline: none;
+}
+.frm_chat_form .frm_add_form_row,
+.frm_hidden_repeater_section,
+.frm_hidden_repeater_nav,
+.frm_inactive_chat_field:not(.frm_animating_chat_field),
+.frm_chat_form .frm_chat_section > h3,
+.single-frm_landing_page:not(.frm_image_block) .frm_chat_form_cont.frm_in_section .frm-progress-text,
+body:not(.single-frm_landing_page) .frm_chat_form_cont.frm_in_section .frm-progress-text {
+	display: none !important;
+}
+.frm-chat-wrapper {
+	box-sizing: border-box;
+	padding: var(--fieldset-padding);
+	padding-top: 0;
+	padding-bottom: 0;
+	position: relative;
+}
+.button.frm_continue_chat.frm_hidden {
+	display: none;
+}
+.frm_chat_blank_answer {
+	font-style: italic;
+	opacity: .6;
+}
+.frm_continue_chat svg {
+	display: inline;
+	vertical-align: middle !important
+}
+.frm-key-instructions {
+	font-size: 11px;
+	text-align: center;
+	opacity: .9;
+	line-height: 16px;
+	width: 100%;
+}
+.frm-instruction-key {
+	font-weight: bold;
+}
+.frm_chat_arrows {
+	text-align: right;
+}
+.frm_chat_arrows svg {
+	max-height: 18px; /* Helps fix an issue with giant arrow buttons in IE11 */
+	fill: none;
+}
+.single-frm_landing_page.frm_image_default .frm_chat_arrows,
+.single-frm_landing_page.frm_image_right .frm_chat_arrows {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+.single-frm_landing_page.frm_image_left .frm_chat_arrows {
+	position: fixed;
+	bottom: 10px;
+	left: calc( 56% - 15px );
+	transform: translateX(-100%);
+}
+.frm-chat-wrapper:not(.frm_final_question) .frm_next_checkmark,
+.frm-chat-wrapper.frm_final_question .frm_chat_next_arrow svg:not(.frm_next_checkmark),
+.frm-chat-wrapper:not(.frm_final_question) .frm_continue_final_text,
+.frm-chat-wrapper.frm_final_question .frm_continue_text,
+.frm-chat-wrapper.frm-no-submit.frm_final_question .frm_continue_chat,
+.frm-chat-wrapper.frm-no-submit.frm_final_question .frm_chat_next_arrow,
+.frm_chat_form .frm_repeat_buttons,
+.frm_loading_form .frm_continue_chat svg {
+	display: none;
+}
+.with_frm_style .frm_loading_form .frm_chat_next_arrow.frm_button_submit:before {
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.frm_chat_arrow {
+	background: #EDF0FC;
+	background: var(--submit-bg-color);
+	border-radius: 4px;
+	border-radius: var(--submit-border-radius);
+	color: var(--submit-text-color) !important;
+	padding: 3px 10px 3px 8px;
+	display: inline-block;
+	line-height: 1;
+}
+.frm_chat_arrow + .frm_chat_arrow {
+	margin-left: 5px;
+	padding: 3px 8px 3px 10px;
+}
+.with_frm_style .frm_chat_arrow:not(.frm_disabled_arrow):hover {
+	background: var(--submit-hover-bg-color);
+	border-color: var(--submit-hover-border-color);
+	color: var(--submit-hover-color);
+}
+.with_frm_style .frm_chat_arrow:not(.frm_disabled_arrow):active,
+.with_frm_style .frm_chat_arrow:not(.frm_disabled_arrow):focus {
+	background: var(--submit-active-bg-color);
+	border-color: var(--submit-active-border-color);
+	color: var(--submit-active-color);
+}
+.frm_disabled_arrow {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+.frm_chat_form .frm_form_field .ui-datepicker-inline {
+	max-width: 100%;
+}
+.frm_chat_form .frm_display_format_buttons .frm_label_with_image,
+.frm_chat_form .frm_display_format_buttons .frm_label_button_container {
+	padding-left: calc( var(--field-height) / 3 );
+	padding-right: calc( var(--field-height) / 3 );
+}
+.frm_chat_form .frm_display_format_buttons .frm_label_button_container,
+.frm_chat_form .frm_display_format_buttons .frm_image_option_container,
+.frm_chat_form .frm_image_options .frm_image_option_container {
+	--field-border-width: 1px;
+}
+.frm-chat-progress {
+	text-align: center;
+}
+.frm-chat-progress .frm-progress-bar {
+	margin: 0 auto 5px;
+	position: relative;
+}
+.frm-chat-progress .frm-progress-bar > div {
+	height: 5px;
+}
+.frm-chat-progress .frm-progress-bar > div:first-child {
+	background: var(--progress-active-bg-color);
+	position: absolute;
+	transition: width 0.5s;
+}
+.frm-chat-progress .frm-progress-bar > div:last-child {
+	background: var(--progress-bg-color);
+}
+.frm_in_section .frm-progress-bar {
+	margin-bottom: 0;
+}
+.frm-chat-progress .frm-progress-text {
+	opacity: 0.7;
+	font-size: 12px;
+}
+.frm_chat_form .frm_section_heading,
+.frm_chat_form .frm_section_heading > h3 {
+	margin-top: 0 !important;
+	width: 100%;
+}
+.single-frm_landing_page:not(.frm_image_block) .frm_section_heading > h3 {
+	position: fixed;
+	top: calc( var(--frm-admin-bar ) + var(--progress-bar-height) );
+}
+.frm_active_chat_field + .frm_active_chat_field h3,
+.frm_animating_chat_field.frm_inactive_chat_field + .frm_animating_chat_field.frm_inactive_chat_field h3 {
+	text-indent: -9999px;
+	white-space: nowrap;
+	border-left: none !important;
+	border-right: none !important;
+	background: none !important;
+}
+.single-frm_landing_page {
+	--frm-admin-bar: 0px;
+}
+.admin-bar.single-frm_landing_page {
+	--frm-admin-bar: 32px;
+}
+.single-frm_landing_page .frm-chat-progress {
+	position: fixed !important;
+	top: var(--frm-admin-bar);
+	left: 0;
+	width: 100%;
+	max-width: 100%;
+	z-index: 100 !important;
+}
+.frm_image_left .frm-progress-text,
+.frm_image_right .frm-progress-text {
+	width: 56%;
+}
+.frm_image_right .frm-progress-text {
+	float: right;
+}
+.with_frm_style .frm_chat_start_page, .with_frm_style .frm_chat_start_page div.frm_description {
+	--form-align: center;
+	text-align: center;
+}
+.frm_chat_start_wrapper {
+	margin-top: 15px;
+}
+.frm_forms.frm_full_submit .frm_submit button.frm_chat_start {
+    width: auto;
+}
+.frm_press_enter {
+	font-size: 11px;
+	margin-left: 10px;
+	display: none;
+}
+.single-frm_landing_page .frm_press_enter,
+.frm_preview_page .frm_press_enter,
+.frm_press_enter svg {
+	display: inline;
+}
+.with_frm_style .frm_chat_form .frm_repeat_sec {
+	border-bottom-style: none;
+	margin: 0;
+	padding: 0;
+}
+.frm-repeater-nav {
+	display: flex;
+}
+.frm-repeater-nav span {
+	color: var(--description-color);
+}
+.frm_chat_repeater_progress {
+	flex: 1;
+	text-align: center;
+}
+.frm_chat_repeater_add svg, .frm_chat_repeater_remove svg {
+	color: var(--repeat-icon-color);
+}
+.frm-repeater-nav a {
+	font-size: var(--font-size);
+	line-height: 1;
+}
+.frm_conversational_landing_page.frm_with_color_block .container {
+	overflow: clip;
+}
+.frm_with_color_block .frm_chat_form_cont,
+.frm_with_color_block .frm_chat_form {
+	overflow-x: unset;
+}
+.frm_chat_form_cont .frm_section_heading:not(.frm_chat_section) > *:not(h3) {
+    margin-left: var(--section-padding) !important;
+    margin-right: var(--section-padding) !important;
+	max-width: calc( 100% - (var(--section-padding) * 2) );
+}
+@media only screen and (max-width: 782px) {
+	.single-frm_landing_page.frm_image_left .frm_chat_arrows {
+		left: unset;
+		right: 10px;
+		transform: unset;
+	}
+	.frm_image_right .frm-progress-text {
+		float: none;
+	}
+	.frm_image_left .frm-progress-text,
+	.frm_image_right .frm-progress-text {
+		width: 100%;
+	}
+	.admin-bar.single-frm_landing_page {
+		--frm-admin-bar: 46px;
+	}
+}

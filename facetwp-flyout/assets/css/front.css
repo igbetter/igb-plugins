@@ -1,0 +1,77 @@
+.facetwp-flyout {
+    position: fixed;
+    width: 300px;
+    max-width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    background: #fff;
+    border-right: 1px solid #eee;
+    transition: all 400ms ease-in-out;
+    transform: translateX(-100%);
+}
+
+body.rtl .facetwp-flyout {
+    transform: translateX(100%);
+    right: 0;
+}
+
+.facetwp-flyout.active,
+body.rtl .facetwp-flyout.active {
+    transform: translateX(0);
+}
+
+.facetwp-flyout-wrap {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px); /* flyout-close = 40px */
+    overflow: auto;
+}
+
+.facetwp-flyout-close,
+.facetwp-flyout-content {
+    padding: 10px;
+}
+
+.facetwp-flyout-close {
+    text-align: right;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.facetwp-flyout-tpl {
+    display: none;
+}
+
+body.admin-bar .facetwp-flyout {
+    top: 32px;
+}
+
+body.admin-bar .facetwp-flyout-wrap {
+    height: calc(100% - 72px); /* flyout-close (40px) + admin-bar (32px) */
+}
+
+.facetwp-flyout-fog {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.facetwp-flyout-fog.active {
+    display: block;
+}
+
+@media (max-width: 782px) {
+    body.admin-bar .facetwp-flyout {
+        top: 46px;
+    }
+
+    body.admin-bar .facetwp-flyout-wrap {
+        height: calc(100% - 86px); /* flyout-close (40px) + admin-bar (46px) */
+    }
+}
